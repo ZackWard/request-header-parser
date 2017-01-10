@@ -9,6 +9,9 @@ app.get('/api/whoami', function (req, res) {
     
     // App will be deployed behind an Nginx reverse proxy, so we need this to get the original IP address if we're in production
     var remoteIP = req.get('X-Real-IP') == null ? req.ip : req.get('X-Real-IP');
+
+    // Set CORS headers
+    res.set('Access-Control-Allow-Origin', '*');
     
     res.json({
         ipaddress: remoteIP,
