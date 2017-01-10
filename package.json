@@ -1,0 +1,28 @@
+{
+  "name": "request-header-parser",
+  "version": "0.0.1",
+  "description": "Request Header Parser Microservice project for Free Code Camp",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha",
+    "start": "node request-header-parser.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZackWard/request-header-parser.git"
+  },
+  "author": "Zack Ward",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ZackWard/request-header-parser/issues"
+  },
+  "homepage": "https://github.com/ZackWard/request-header-parser#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "chai-http": "^3.0.0"
+  },
+  "dependencies": {
+    "express": "^4.14.0",
+    "helmet": "^3.3.0"
+  }
+}
